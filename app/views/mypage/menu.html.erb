@@ -1,7 +1,20 @@
 <h1>Mypage#menu</h1>
-<button>リクエストを送る</button>
-<button>リクエストに答える</button>
-<button>開示申請</button>
-<button>プレミアム会員になる</button>
+<ul>
+<li>
+<%= link_to "リクエストを送る", :controller => "mypage", :action => "sendwill" %>
+</li>
+<li>
+<%= link_to "リクエストに答える", :controller => "mypage", :action => "answerwill" %>
+</li>
+<li>
+<%= link_to "開示申請", :controller => "mypage", :action => "openwill" %>
+</li>
+<li>
+<%= link_to "プレミアム会員になる", :controller => "mypage", :action => "premium" %>
+</li>
+<li>
+<%= link_to "各種設定", :controller => "setting", :action => "settingmenu" %>
+</li>
 
+</ul>
 
